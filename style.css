@@ -131,17 +131,25 @@ body {
     height: 325px;
 }
 
-.card .contact li{
-    list-style: none;
+.card .contact a li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    /* list-style: none; */
     width: 100%;
     min-height: 100px;
     background: #fff;
     border-radius: 10px;
-    display: flex;
     transition: 0.5s;
     opacity: 0;
     transform: scale(0);
     padding: 10px 20px;
+    transition-delay: calc(0.25s * var(--i));
+}
+
+.card .contact a{
+    text-decoration: none;
 }
 
 .card.active .contact li {
@@ -162,14 +170,7 @@ body {
     transform: scale(1.1);
 }
 
-.card .contact li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 10px;
-}
-
-.card .contact li a p {
+.card .contact a li p {
     color: #666;
     font-size: 1.1em;
 }
