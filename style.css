@@ -23,7 +23,7 @@ body {
     position: relative;
     transition: 0.5s;
     height: 100px;
-    /* background: #fff; */
+    width: 400px;
     transition-delay: 0.5s;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .card .user {
     position: relative;
-    width: 400px;
+    width: 100%;
     min-height: 150px;
     background-color: #2196f3;
     display: flex;
@@ -44,6 +44,12 @@ body {
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 95%;
+    }
 }
 
 .card .user .imgBox {
